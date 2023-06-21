@@ -1,0 +1,20 @@
+import random
+
+# List of bot responses
+bot_responses = [
+    "Hello!",
+    "How are you?",
+    "What can I assist you with?",
+    "Nice to meet you!",
+    "I'm here to help!",
+]
+
+# Function to generate a random bot response
+def get_bot_response():
+    return random.choice(bot_responses)
+
+# Main loop for the bot
+while True:
+    user_input = input("User: ")
+    bot_response = get_bot_response()
+    print("Bot:", bot_response)
